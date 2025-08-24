@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TNS Farm Helper – Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121821;
+      --text: #e8eef7;
+      --muted: #9fb0c3;
+      --accent: #5ac8fa;
+      --border: #1f2a37;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #0b0f14, #0e1520 40%, #0b0f14);
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 960px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    h1, h2, h3 { margin: 0 0 12px; }
+    h1 { font-size: 28px; letter-spacing: .2px; }
+    h2 { font-size: 20px; margin-top: 22px; }
+    p {
+      margin: 10px 0;
+      color: var(--text);
+    }
+    .muted { color: var(--muted); }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      margin-right: 8px;
+      font-size: 12px;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 10px;
+      margin: 12px 0 18px;
+    }
+    .lang-switch button {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 14px;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(90,200,250,.15) inset;
+    }
+    .notice {
+      border-left: 3px solid var(--accent);
+      padding-left: 12px;
+      margin: 10px 0;
+      color: var(--muted);
+    }
+    ul { margin: 8px 0 8px 18px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 18px; color: var(--muted); }
+    .divider { height: 1px; background: var(--border); margin: 18px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>TNS Farm Helper – Privacy Policy</h1>
+      <div class="muted">Last updated: 2025-08-24</div>
+      <div class="lang-switch">
+        <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+        <button id="btn-tr" onclick="setLang('tr')">Türkçe</button>
+      </div>
+
+      <!-- English -->
+      <section id="lang-en">
+        <p class="notice">
+          TNS Farm Helper is a browser extension that improves workflow on the Tribal Wars “Farm Assistant” page.
+          This policy explains what data we (do not) collect and how permissions are used.
+        </p>
+
+        <span class="tag">No ads</span>
+        <span class="tag">No analytics</span>
+        <span class="tag">No personal data</span>
+
+        <h2>1) Data We Collect</h2>
+        <p><strong>We do not collect personal information.</strong> The extension stores only non‑personal, local preferences in Chrome storage (e.g., selected farm template, min/max delay, UI options). These settings remain on your device.</p>
+
+        <h2>2) How We Use Data</h2>
+        <p>Local settings are used solely to operate the in‑page helper panel on the Farm Assistant page. We do not sell, rent, or share data with third parties.</p>
+
+        <h2>3) Permissions Used</h2>
+        <ul>
+          <li><strong>storage</strong> – to save local preferences required for the single purpose described above.</li>
+          <li><strong>Host access (Tribal Wars domains only)</strong> – the content script runs <em>exclusively</em> on the Farm Assistant page to interact with page elements needed to trigger user‑selected templates.</li>
+        </ul>
+
+        <h2>4) Remote Code & Network Requests</h2>
+        <p>The extension does <strong>not</strong> execute or load remote code. All scripts and logic are bundled with the extension. No external <code>&lt;script&gt;</code>, <code>eval</code>, dynamic modules, or WASM are used.</p>
+        <p>If license activation is enabled, the extension may make HTTPS requests to the TNS license server to validate a license key. Responses are simple JSON and are not executed as code.</p>
+
+        <h2>5) Cookies & Local Storage</h2>
+        <p>No cookies are set by the extension. Chrome’s extension <em>storage</em> is used for local preferences.</p>
+
+        <h2>6) Data Retention & Control</h2>
+        <ul>
+          <li>All settings are stored locally on your device.</li>
+          <li>Removing the extension or clearing Chrome extension storage deletes these settings.</li>
+        </ul>
+
+        <h2>7) Children’s Privacy</h2>
+        <p>The extension is not directed to children under 13 and does not knowingly collect personal data.</p>
+
+        <h2>8) Changes to This Policy</h2>
+        <p>We may update this policy when functionality or legal requirements change. We will update the “Last updated” date above.</p>
+
+        <h2>9) Contact</h2>
+        <p>Questions? Contact us at <a href="mailto:support@tnsbot.com">support@tnsbot.com</a>.</p>
+      </section>
+
+      <!-- Turkish -->
+      <section id="lang-tr" style="display:none">
+        <p class="notice">
+          TNS Farm Helper, Tribal Wars “Farm Asistanı” sayfasındaki iş akışını iyileştiren bir tarayıcı uzantısıdır.
+          Bu politika hangi verileri toplamadığımızı ve izinlerin nasıl kullanıldığını açıklar.
+        </p>
+
+        <span class="tag">Reklam yok</span>
+        <span class="tag">Analitik yok</span>
+        <span class="tag">Kişisel veri yok</span>
+
+        <h2>1) Topladığımız Veriler</h2>
+        <p><strong>Kişisel bilgi toplamıyoruz.</strong> Uzantı, yalnızca Chrome depolamasında tutulan kişisel olmayan yerel tercihleri saklar (örn. seçili şablon, min/maks gecikme, arayüz seçenekleri). Bu ayarlar cihazınızda kalır.</p>
+
+        <h2>2) Verilerin Kullanımı</h2>
+        <p>Yerel ayarlar, yalnızca Farm Asistanı sayfasındaki sayfa içi panelin çalışması için kullanılır. Verileri üçüncü taraflarla satmıyor, kiralamıyor veya paylaşmıyoruz.</p>
+
+        <h2>3) Kullanılan İzinler</h2>
+        <ul>
+          <li><strong>storage</strong> – yukarıda belirtilen tek amaç için gerekli yerel tercihleri kaydetmek.</li>
+          <li><strong>Sunucu erişimi (yalnızca Tribal Wars alan adları)</strong> – içerik betiği <em>yalnızca</em> Farm Asistanı sayfasında çalışır ve kullanıcı tarafından seçilen şablonları tetiklemek için gereken sayfa öğeleriyle etkileşir.</li>
+        </ul>
+
+        <h2>4) Uzak Kod ve Ağ İstekleri</h2>
+        <p>Uzantı <strong>uzak kod</strong> çalıştırmaz veya yüklemez. Tüm betikler ve mantık uzantı paketine dâhildir. Harici <code>&lt;script&gt;</code>, <code>eval</code>, dinamik modül veya WASM kullanılmaz.</p>
+        <p>Lisans etkinleştirme açıksa, uzantı lisans anahtarını doğrulamak için TNS lisans sunucusuna HTTPS istekleri yapabilir. Yanıtlar basit JSON’dur ve kod olarak çalıştırılmaz.</p>
+
+        <h2>5) Çerezler ve Local Storage</h2>
+        <p>Uzantı çerez ayarlamaz. Yerel tercihler için Chrome’un eklenti <em>storage</em> alanı kullanılır.</p>
+
+        <h2>6) Saklama Süresi ve Kontrol</h2>
+        <ul>
+          <li>Tüm ayarlar cihazınızda yerel olarak saklanır.</li>
+          <li>Uzantıyı kaldırmanız veya Chrome eklenti depolamasını temizlemeniz bu ayarları siler.</li>
+        </ul>
+
+        <h2>7) Çocukların Gizliliği</h2>
+        <p>Uzantı 13 yaş altındaki çocuklara yönelik değildir ve bilerek kişisel veri toplamaz.</p>
+
+        <h2>8) Bu Politikadaki Değişiklikler</h2>
+        <p>İşlevsellik veya yasal gereklilikler değiştiğinde bu politikayı güncelleyebiliriz. “Son güncelleme” tarihi buna göre değiştirilecektir.</p>
+
+        <h2>9) İletişim</h2>
+        <p>Sorularınız için bize <a href="mailto:support@tnsbot.com">support@tnsbot.com</a> üzerinden ulaşabilirsiniz.</p>
+      </section>
+
+      <div class="divider"></div>
+      <footer>
+        © 2025 TNS Farm Helper. This page can be hosted on any static site (GitHub Pages, Netlify, etc.).
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function setLang(code) {
+      const en = document.getElementById('lang-en');
+      const tr = document.getElementById('lang-tr');
+      const ben = document.getElementById('btn-en');
+      const btr = document.getElementById('btn-tr');
+      if (code === 'en') {
+        en.style.display = '';
+        tr.style.display = 'none';
+        ben.classList.add('active');
+        btr.classList.remove('active');
+      } else {
+        en.style.display = 'none';
+        tr.style.display = '';
+        btr.classList.add('active');
+        ben.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
